@@ -50,4 +50,9 @@ public class PaysRESTController {
 	public List<Pays> getPaysByCatId(@PathVariable("idLang") Long idLang) {
 	return paysService.findByLangueIdLang(idLang);
 	}/**/
+	
+	@RequestMapping(value="/paysByName/{nom}",method = RequestMethod.GET)
+	public List<Pays> findByNomPaysContains(@PathVariable("nom") String nom) {
+		return paysService.findByNomPaysContains(nom);
+	}
 }

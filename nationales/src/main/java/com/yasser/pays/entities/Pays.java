@@ -24,12 +24,12 @@ public class Pays {
 			this.nomPays = nomPays;
 		}
 
-	public Long getIdPaye() {
+	public Long getIdPays() {
 		return idPays;
 	}
 
-	public void setIdPaye(Long idPaye) {
-		this.idPays = idPaye;
+	public void setIdPays(Long idPays) {
+		this.idPays = idPays;
 	}
 
 	public String getNomPays() {
@@ -43,6 +43,14 @@ public class Pays {
 	@Override
 	public String toString() {
 		return "Pays [idPays=" + idPays + ", nomPays=" + nomPays + "]";
+	}
+
+	public Langue getLangue() {
+		return langue;
+	}
+
+	public void setLangue(Langue langue) {
+		this.langue = langue;
 	}
 	
 }
